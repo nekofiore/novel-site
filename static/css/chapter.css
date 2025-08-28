@@ -1,0 +1,19 @@
+@import url("style.css");
+
+.header-info {
+  text-align: center;
+  margin: 2em;
+}
+
+.heading-title {
+  font-size: 2em;
+  margin-bottom: 0.25em;
+}
+
+.published {
+  font-size: 1em;
+}
+
+.chapter {
+  text-align: left;
+}

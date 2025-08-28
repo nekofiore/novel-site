@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="{{ site.Language.LanguageCode }}" dir="{{ or site.Language.LanguageDirection `ltr` }}">
+<head>
+  <title>&#x273F; nekofiore</title>
+  <link rel="stylesheet" href="/css/chapter.css">
+  <link rel="icon" href="/favicon.png">
+  {{ partial "title.html" .}}
+</head>
+<div class="main-logo">
+  {{ partial "logo.html" }}
+</div>
+<hr>
+<body>
+  <div class="chapter">
+    <header class="header-info">
+      <h1 class="heading-title"> {{ .Params.Series }}: {{ .Title }} </h1>
+      <time class="published"> Last Published: {{ .Params.Date | time.Format ":date_medium" }} </time>
+    </header>
+    <hr>
+    {{ .Content }}
+  </div>
+</body>
+<div>
+  <footer>
+    {{ partial "footer.html" . }}
+  </footer>
+</div>
+</html>

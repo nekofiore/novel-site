@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="{{ site.Language.LanguageCode }}" dir="{{ or site.Language.LanguageDirection `ltr` }}">
+<head>
+  <title>&#x273F; nekofiore</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="icon" href="favicon.png">
+  {{ partial "title.html" .}}
+</head>
+<div class="main-logo">
+  {{ partial "logo.html" }}
+</div>
+<hr class="hr-closed">
+<body>
+  <div class="chapter">
+    <header>
+      {{ .Title }}
+    </header>
+    {{ .Content }}
+  </div>
+</body>
+<div>
+  <footer>
+    {{ partial "footer.html" . }}
+  </footer>
+</div>
+</html>
