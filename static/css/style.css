@@ -5,7 +5,7 @@
 }
 
 :root {
-  font-family: system-ui, Helvetica, nimbus-sans-l, Arial, sans-serif;
+  font-family: system-ui, "Helvetica Neue", Helvetica, nimbus-sans-l, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -42,18 +42,6 @@ p {
 /* For title logo */
 .main-logo {
   padding-top: 1em;
-}
-
-/* For story chapters */
-.chapter {
-  background-color: #ffffff;
-  width: 75vw;
-  min-width: 75vw;
-  max-width: 87.5vw;
-  border: 2px solid #73828280;
-  border-radius: 10px;
-  margin: 0 auto;
-  padding: 2em;
 }
 
 div {

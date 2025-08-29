@@ -1,19 +1,91 @@
 @import url("style.css");
 
-.header-info {
-  text-align: center;
-  margin: 2em;
+:root {
+  font-weight: 450;
+  color: #000;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+/* For the headings (title, series, etc.) */
+.header-info {
+  text-align: center;
+  margin: 0;
+}
+.heading-series {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
 .heading-title {
-  font-size: 2em;
-  margin-bottom: 0.25em;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
 }
 
 .published {
-  font-size: 1em;
+  font-weight: 300;
+  font-size: 0.875rem;
 }
 
+/* Container for the contents of the chapter */
 .chapter {
+  margin: 0 auto;
   text-align: left;
+  padding: 0.5rem;
+  background-color: #ffffff;
+  width: 40rem;
+  min-width: 32rem;
+  max-width: 75vw;
+  border: 1px solid #5c626280;
+  border-radius: 0;
+  padding: 1in;
+}
+
+/* Normal horizontal line */
+.hr-normal {
+  margin-left: 0;
+  margin-right: 0;
+  border: 0.05rem solid #5c626280;
+}
+.hr-normal::before {
+  content: "";
+}
+
+/* Denotes the very beginning <hr> of the chapter */
+.chapter-start {
+  border: none;
+  color: #000;
+  margin: 2em;
+}
+.chapter-start::before {
+  font-weight: bold;
+  display: block;
+  text-align: center;
+  content: "\2726  START \2726";
+}
+
+/* Denotes the very end <hr> of the chapter */
+.chapter-end {
+  border: none;
+  color: #000;
+  margin: 2em;
+}
+.chapter-end::before {
+  font-weight: bold;
+  display: block;
+  text-align: center;
+  content: "\2726  END \2726";
+}
+
+.centered {
+  text-align: center;
+}
+
+p {
+  font-size: 1rem;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 2rem;
 }
