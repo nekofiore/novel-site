@@ -7,7 +7,7 @@ type: 'chapter'
 layout: 'single'
 categories: 'Novel'
 tags: ['Stella', 'Lunella']
-draft: true
+draft: false
 weight: 0
 ---
 
