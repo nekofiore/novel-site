@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on nekofiore</title>
-    <link>https://example.org/tags/</link>
+    <link>https://nekofiore.github.io/novel-site/tags/</link>
     <description>Recent content in Tags on nekofiore</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 28 Aug 2025 12:52:23 -0700</lastBuildDate>
-    <atom:link href="https://example.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://nekofiore.github.io/novel-site/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Lunella</title>
-      <link>https://example.org/tags/lunella/</link>
+      <link>https://nekofiore.github.io/novel-site/tags/lunella/</link>
       <pubDate>Thu, 28 Aug 2025 12:52:23 -0700</pubDate>
-      <guid>https://example.org/tags/lunella/</guid>
+      <guid>https://nekofiore.github.io/novel-site/tags/lunella/</guid>
       <description></description>
     </item>
     <item>
       <title>Stella</title>
-      <link>https://example.org/tags/stella/</link>
+      <link>https://nekofiore.github.io/novel-site/tags/stella/</link>
       <pubDate>Thu, 28 Aug 2025 12:52:23 -0700</pubDate>
-      <guid>https://example.org/tags/stella/</guid>
+      <guid>https://nekofiore.github.io/novel-site/tags/stella/</guid>
       <description></description>
     </item>
     <item>
       <title>Blue</title>
-      <link>https://example.org/tags/blue/</link>
+      <link>https://nekofiore.github.io/novel-site/tags/blue/</link>
       <pubDate>Wed, 15 Mar 2023 11:00:00 -0700</pubDate>
-      <guid>https://example.org/tags/blue/</guid>
+      <guid>https://nekofiore.github.io/novel-site/tags/blue/</guid>
       <description></description>
     </item>
     <item>
       <title>Green</title>
-      <link>https://example.org/tags/green/</link>
+      <link>https://nekofiore.github.io/novel-site/tags/green/</link>
       <pubDate>Wed, 15 Mar 2023 11:00:00 -0700</pubDate>
-      <guid>https://example.org/tags/green/</guid>
+      <guid>https://nekofiore.github.io/novel-site/tags/green/</guid>
       <description></description>
     </item>
     <item>
       <title>Red</title>
-      <link>https://example.org/tags/red/</link>
+      <link>https://nekofiore.github.io/novel-site/tags/red/</link>
       <pubDate>Wed, 15 Mar 2023 11:00:00 -0700</pubDate>
-      <guid>https://example.org/tags/red/</guid>
+      <guid>https://nekofiore.github.io/novel-site/tags/red/</guid>
       <description></description>
     </item>
   </channel>

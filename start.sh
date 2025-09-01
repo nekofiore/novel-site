@@ -1,3 +1,3 @@
 #!/bin/bash
 
-hugo server -D --noHTTPCache --ignoreCache --disableFastRender
+hugo server -D --disableFastRender
