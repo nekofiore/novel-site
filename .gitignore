@@ -1,7 +1,4 @@
 # hugo related things
-public/*
-themes/test/*
-resources/*
 .hugo_build.lock
 
 # misc mac stuff
