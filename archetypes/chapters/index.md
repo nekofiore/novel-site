@@ -6,6 +6,6 @@ type: 'chapter'
 layout: 'single'
 categories: 'Novel'
 tags: []
-draft: true
+draft: false
 weight: 9999
 ---
