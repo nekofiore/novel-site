@@ -1,6 +1,7 @@
 baseURL = 'https://nekofiore.github.io/novel-site/'
 languageCode = 'en-us'
 title = 'nekofiore'
+relativeURLs = true
 
 theme = "base"
 
