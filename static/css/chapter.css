@@ -46,8 +46,7 @@
   border: 1px solid #5c626280;
   width: 20vw;
   height: 80vh;
-  top: 50%;
-  transform: translate(0%, -50%);
+  top: 7.5vh;
   .list-header {
     display: block;
     h1 {
@@ -109,7 +108,7 @@
       text-decoration: none;
     }
   }
-  .return-to-chapters {
+  .list-chapters {
     position: relative;
     margin-top: 1rem;
     margin-bottom: 1rem;

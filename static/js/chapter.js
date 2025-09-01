@@ -2,6 +2,8 @@
 
 // Wait for the document to be fully loaded before running the script
 document.addEventListener('DOMContentLoaded', (event) => {
+    const pageList = document.getElementById("pageList");
+    const toggleList = document.getElementById("toggleList")
     // 'keydown' event listener
     document.addEventListener('keydown', function(e) {
         // on 'left arrow', go to the previous chapter
@@ -14,5 +16,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
             e.preventDefault();
             document.getElementById('nextPage').click();
         }
+    });
+    toggleList.addEventListener('click', function(e) {
+        pageList.classList.toggle('hidden');
     });
 });

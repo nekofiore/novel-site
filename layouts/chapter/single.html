@@ -46,7 +46,7 @@
     </div>
 
     <!-- Table of Contents -->
-    <div class="page-list">
+    <div id="pageList" class="page-list hidden">
       <div class="list-header">
         <h1>Table of Contents</h1>
       </div>
@@ -72,7 +72,7 @@
 
 <!-- This pagination returns the user to the list of chapters, or goes to prev/next chapters -->
 <div class="pagination-bar">
-  <button class="return-to-chapters material-icons">menu_open</button>
+  <button id="toggleList" class="list-chapters material-icons">menu_open</button>
   <button class="info material-icons">help</button>
 
   {{ range where .Parent.RegularPages "Weight" $prevChapter }}
