@@ -1,6 +1,6 @@
 +++
 date = '2025-08-26T06:08:07-07:00'
-draft = true
+draft = false
 title = 'Index'
 +++
 
