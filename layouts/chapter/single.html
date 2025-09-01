@@ -1,41 +1,85 @@
+{{ $currentChapter := .Weight }}
+{{ $prevChapter := sub $currentChapter 1 }}
+{{ $nextChapter := add $currentChapter 1 }}
+
 <!DOCTYPE html>
 <html lang="{{ site.Language.LanguageCode }}" dir="{{ or site.Language.LanguageDirection `ltr` }}">
 <head>
-  <title>&#x273F; nekofiore</title>
+  <title> {{ .Params.Series }}: {{ .Title }} </title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="/css/chapter.css">
   <link rel="icon" href="/favicon.png">
   {{ partial "title.html" .}}
 </head>
-<div class="main-logo">
-  {{ partial "logo.html" }}
-</div>
-<hr>
+
 <body>
-  <div class="chapter">
-    <header class="header-info">
-      <h1 class="heading-series"> {{ .Params.Series }} </h1>
-      <h2 class="heading-title"> "{{ .Title }}" </h2>
-      <time class="published"> First Published: {{ .Params.Date | time.Format ":date_medium" }} </time>
-    </header>
-    <hr class="hr-normal">
-    {{ with .Resources.Get "blurb.md" }}
-      <div class="centered"> {{ .Content }} </div>
-    {{ end }}
-    <hr class="hr-start">
-    {{ .Content }}
-    <hr class="chapter-end">
-    <hr class="hr-normal">
-    {{ with .Resources.Get "note.md" }}
-      <div class="centered">
-        <b> {{ .Title }} </b>
-          {{ .Content }}
+  <!-- Main Logo -->
+  <div class="main-logo">
+    {{ partial "logo.html" }}
+  </div>  
+
+  <!-- Container for Chapter & Table of Contents -->
+  <div class="container">
+    <!-- Chapter -->
+    <div class="chapter">
+      <header class="header-info">
+        <h1 class="heading-series"> {{ .Params.Series }} </h1>
+        <h2 class="heading-title"> "{{ .Title }}" </h2>
+        <time class="published"> First Published: {{ .Params.Date | time.Format ":date_medium" }} </time>
+      </header>
+      <hr class="hr-normal">
+      {{ with .Resources.Get "blurb.md" }}
+        <div class="centered"> {{ .Content }} </div>
+      {{ end }}
+      <hr class="hr-start">
+      {{ .Content }}
+      <hr class="chapter-end">
+      <!-- This section represents the 'after' of the chapter  -->
+      <hr class="hr-normal">
+      {{ with .Resources.Get "note.md" }}
+        <div class="centered">
+          <b> {{ .Title }} </b>
+            {{ .Content }}
+        </div>
+      {{ end }}
+      <script src="/js/chapter.js"></script>
+    </div>
+
+    <!-- Table of Contents -->
+    <div class="page-list">
+      <div class="list-header">
+        <h1>Table of Contents</h1>
       </div>
-    {{ end }}
+      <div>
+        <h2 style="font-weight: bold">Chapters</h2>
+      </div>
+      {{ range .Parent.RegularPages.ByWeight.Reverse }}
+        <div>
+          <div class="index"> {{ .Weight }} </div>
+          <a href="{{ .RelPermalink }}"> {{ .Title }} </a>
+        </div>
+      {{ end }}
+    </div>
+  </div>
+  
+  <!-- Footer -->
+  <div>
+    <footer>
+      {{ partial "footer.html" . }}
+    </footer>
   </div>
 </body>
-<div>
-  <footer>
-    {{ partial "footer.html" . }}
-  </footer>
+
+<!-- This pagination returns the user to the list of chapters, or goes to prev/next chapters -->
+<div class="pagination-bar">
+  <button class="return-to-chapters material-icons">menu_open</button>
+  <button class="info material-icons">help</button>
+
+  {{ range where .Parent.RegularPages "Weight" $prevChapter }}
+    <a id="prevPage" class="prev-page material-icons" style="font-size: 48px;" href="{{ .RelPermalink }}">arrow_drop_up</a>
+  {{ end }}
+  {{ range where .Parent.RegularPages "Weight" $nextChapter }}
+    <a id="nextPage" class="next-page material-icons" style="font-size: 48px;" href="{{ .RelPermalink }}">arrow_drop_down</a>
+  {{ end }}
 </div>
 </html>

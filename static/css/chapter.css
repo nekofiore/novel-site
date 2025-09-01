@@ -1,32 +1,24 @@
-@import url("style.css");
+/* @import url("style.css"); */
 
 :root {
+  font-family: system-ui, "Helvetica Neue", Helvetica, nimbus-sans-l, Arial, sans-serif;
+  line-height: 1.5;
   font-weight: 450;
+
+  background-color: #ffffff;
   color: #000;
 
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-/* For the headings (title, series, etc.) */
-.header-info {
+  flex: auto;
   text-align: center;
-  margin: 0;
-}
-.heading-series {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-}
-.heading-title {
-  font-size: 1rem;
-  font-weight: 400;
-  margin-bottom: 0.5rem;
 }
 
-.published {
-  font-weight: 300;
-  font-size: 0.875rem;
+/* Container for everything */
+.container {
+  display: flex;
+  gap: 2rem;
 }
 
 /* Container for the contents of the chapter */
@@ -43,14 +35,159 @@
   padding: 1in;
 }
 
+/* The dropdown for the list of all chapters */
+.page-list {
+  z-index: 1;
+  position: sticky;
+  display: block;
+  text-align: left;
+  padding: 1rem;
+  background-color: #ffffff;
+  border: 1px solid #5c626280;
+  width: 20vw;
+  height: 80vh;
+  top: 50%;
+  transform: translate(0%, -50%);
+  .list-header {
+    display: block;
+    h1 {
+      text-align: center;
+      color:#000;
+      font-size: 1.25rem;
+      margin-top: 0;
+    }
+  }
+  div {
+    display: flex;
+    gap: 1rem;
+    align-items: baseline;
+    .index {
+      min-width: 1rem;
+    }
+    a {
+      color: #474652;;
+      display: block;
+      transition: 0.1s ease-in-out;
+      &:hover {
+        color: #3379d4;
+        text-decoration: underline;
+      }
+    }
+    h2 {
+      font-size: medium;
+      margin-top: 0.25rem;
+      margin-bottom: 0.25rem;
+      padding: 0;
+    }
+  }
+}
+
+/* Pagination, for linking to previous/next pages */
+.pagination-bar {
+  z-index: 2;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #2b2a33;
+  color: #fff;
+  height: 101%;
+  width: 3rem;
+  right: -1.5rem;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  .prev-page {
+    position: relative;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  .next-page {
+    position: relative;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  .return-to-chapters {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    align-items: center;
+    text-align: center;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  .info {
+    position: absolute;
+    margin-bottom: 1rem;
+    bottom: 0;
+  }
+}
+
+
+
+/* For the headings (title, series, etc.) */
+.header-info {
+  text-align: center;
+  margin: 0;
+}
+.heading-series {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.heading-title {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+/* Adjusting main-logo */
+.main-logo {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+/* Custom <hr> tag */
+hr {
+  border: none;
+  color: #000;
+  margin: 2em;
+  &:before {
+    display: block;
+    text-align: center;
+    content: "\2726";
+  }
+}
+
+/* Base Customization for <a> and <button> */
+a, button {
+  border: 0;
+  background: none;
+  font-weight: 500;
+  color: #71afff;
+  text-decoration: inherit;
+  transition: color 0.1s ease-in-out;
+  &:hover {
+    color: #3379d4;
+    cursor: pointer;
+  }
+}
+
+.published {
+  font-weight: 300;
+  font-size: 0.875rem;
+}
+
 /* Normal horizontal line */
 .hr-normal {
   margin-left: 0;
   margin-right: 0;
   border: 0.05rem solid #5c626280;
-}
-.hr-normal::before {
-  content: "";
+  &:before {
+    content: "";
+  }
 }
 
 /* Denotes the very beginning <hr> of the chapter */
@@ -58,12 +195,12 @@
   border: none;
   color: #000;
   margin: 2em;
-}
-.chapter-start::before {
-  font-weight: bold;
-  display: block;
-  text-align: center;
-  content: "\2726  START \2726";
+  &:before {
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    content: "\2726  START \2726";
+  }
 }
 
 /* Denotes the very end <hr> of the chapter */
@@ -71,12 +208,17 @@
   border: none;
   color: #000;
   margin: 2em;
+  &:before {
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    content: "\2726  END \2726";
+  }
 }
-.chapter-end::before {
-  font-weight: bold;
-  display: block;
-  text-align: center;
-  content: "\2726  END \2726";
+
+/* hidden class */
+.hidden {
+  display: none;
 }
 
 .centered {
