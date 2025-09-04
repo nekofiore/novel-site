@@ -1,11 +1,24 @@
 @use 'base';
-@use 'color';
+
+$fiore-pink: #ff759a;
+$fiore-blue: #67b5ff;
+
+// body
+:root {
+  background-image: url('/static/images/amefioreboba.png');
+  background-size: cover;
+}
+
+body {
+  background-image: url('/static/images/amefioreboba.png');
+  background-size: cover;
+}
 
 // container
 .container {
   margin: 0 auto;
   padding: 1rem;
-  border: base.$border;
+  border: 1px solid #5c626280;
   background-color: white;
 }
 
@@ -18,15 +31,15 @@
 
 // intro
 .intro {
-  border: base.$border;
+  border: 1px solid #5c626280;
   width: 60vw;
   padding: 1rem;
 }
 
 // colors
 .pink {
-  color: color.$fiore-pink;
+  color: $fiore-pink;
 }
 .blue {
-  color: color.$fiore-blue;
+  color: $fiore-blue;
 }

@@ -33,6 +33,93 @@ hr:before {
   content: "✦";
 }
 
+.navbar {
+  z-index: 5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 3.25rem;
+  background-color: white;
+  border-bottom: 1px solid rgba(92, 98, 98, 0.5019607843);
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.navbar .nav-left, .navbar .nav-center, .navbar .nav-right {
+  z-index: 5;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.navbar .nav-left a, .navbar .nav-left button, .navbar .nav-center a, .navbar .nav-center button, .navbar .nav-right a, .navbar .nav-right button {
+  display: block;
+  background: none;
+  border: none;
+  color: #454545;
+  min-width: 40px;
+  margin: 0.25rem;
+  text-decoration: none;
+  object-fit: scale-down;
+}
+.navbar .nav-left a img, .navbar .nav-left button img, .navbar .nav-center a img, .navbar .nav-center button img, .navbar .nav-right a img, .navbar .nav-right button img {
+  max-height: 48px;
+  max-width: auto;
+}
+.navbar .dropdown {
+  z-index: 4;
+  display: block;
+  position: absolute;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 1px solid rgba(92, 98, 98, 0.5019607843);
+  border-bottom: 1px solid rgba(92, 98, 98, 0.5019607843);
+  background-color: white;
+  top: 3.25rem;
+  left: 0;
+  height: 100vh;
+  max-width: 10rem;
+  transition: max-width 0.25s ease-in;
+}
+.navbar .dropdown h1 {
+  font-size: medium;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+.navbar .dropdown li {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+  width: 100%;
+  height: 1.25rem;
+  font-size: 14px;
+}
+.navbar .dropdown li .index {
+  min-width: 1rem;
+}
+.navbar .dropdown .hr-normal {
+  width: 100%;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.navbar .hidden {
+  max-width: 0;
+}
+
+:root {
+  background-image: url("/static/images/amefioreboba.png");
+  background-size: cover;
+}
+
+body {
+  background-image: url("/static/images/amefioreboba.png");
+  background-size: cover;
+}
+
 .container {
   margin: 0 auto;
   padding: 1rem;
@@ -50,6 +137,83 @@ hr:before {
   border: 1px solid rgba(92, 98, 98, 0.5019607843);
   width: 60vw;
   padding: 1rem;
+}
+
+.navbar {
+  z-index: 5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 3.25rem;
+  background-color: white;
+  border-bottom: 1px solid rgba(92, 98, 98, 0.5019607843);
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.navbar .nav-left, .navbar .nav-center, .navbar .nav-right {
+  z-index: 5;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.navbar .nav-left a, .navbar .nav-left button, .navbar .nav-center a, .navbar .nav-center button, .navbar .nav-right a, .navbar .nav-right button {
+  display: block;
+  background: none;
+  border: none;
+  color: #454545;
+  min-width: 40px;
+  margin: 0.25rem;
+  text-decoration: none;
+  object-fit: scale-down;
+}
+.navbar .nav-left a img, .navbar .nav-left button img, .navbar .nav-center a img, .navbar .nav-center button img, .navbar .nav-right a img, .navbar .nav-right button img {
+  max-height: 48px;
+  max-width: auto;
+}
+.navbar .dropdown {
+  z-index: 4;
+  display: block;
+  position: absolute;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 1px solid rgba(92, 98, 98, 0.5019607843);
+  border-bottom: 1px solid rgba(92, 98, 98, 0.5019607843);
+  background-color: white;
+  top: 3.25rem;
+  left: 0;
+  height: 100vh;
+  max-width: 10rem;
+  transition: max-width 0.25s ease-in;
+}
+.navbar .dropdown h1 {
+  font-size: medium;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+.navbar .dropdown li {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+  width: 100%;
+  height: 1.25rem;
+  font-size: 14px;
+}
+.navbar .dropdown li .index {
+  min-width: 1rem;
+}
+.navbar .dropdown .hr-normal {
+  width: 100%;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.navbar .hidden {
+  max-width: 0;
 }
 
 .pink {

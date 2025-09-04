@@ -1,0 +1,32 @@
+@use 'base';
+:root {
+  background-image: url("/static/images/amefioreboba.png");
+  background-size: cover; }
+
+body {
+  background-image: url("/static/images/amefioreboba.png");
+  background-size: cover; }
+
+.container {
+  margin: 0 auto;
+  padding: 1rem;
+  border: 1px solid #5c626280;
+  background-color: white; }
+
+.content {
+  padding: 1rem;
+  display: flex;
+  justify-content: center; }
+
+.intro {
+  border: 1px solid #5c626280;
+  width: 60vw;
+  padding: 1rem; }
+
+.pink {
+  color: #ff759a; }
+
+.blue {
+  color: #67b5ff; }
+
+/*# sourceMappingURL=main.css.map */
