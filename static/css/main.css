@@ -139,7 +139,10 @@ hr:before {
 }
 
 html {
-  background: url("/images/fiore_guitar.png") center/cover no-repeat scroll;
+  background-color: #ffffff;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .container {

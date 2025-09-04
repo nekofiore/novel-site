@@ -6,7 +6,14 @@ $default-border: 1px solid #5c626280;
 
 // bg
 html {
-  background: url('/images/fiore_guitar.png') center / cover no-repeat scroll;
+  background-color: #ffffff;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  // background-image: url('/images/fiore_guitar.png');
+
+  // Gradient
+  // background-image: linear-gradient(to bottom, #ffffffff, #ffffffff 25%, #ffffff00, #00000000 100%), url('/images/fiore_guitar.png');
 }
 
 // container
