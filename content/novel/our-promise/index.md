@@ -8,7 +8,7 @@ layout: 'single'
 categories: 'Novel'
 tags: ['Stella', 'Lunella']
 draft: false
-issue: 1
+volume: 1
 weight: 0
 ---
 

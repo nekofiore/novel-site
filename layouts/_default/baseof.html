@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="{{ site.Language.LanguageCode }}" dir="{{ or site.Language.LanguageDirection `ltr` }}">
+<head>
+  {{ partial "title" . }}
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="icon" href="favicon.png">
+  {{ partial "title.html" .}}
+</head>
+<body>
+  {{- block "main" . }} 
+  {{ end }}
+</body>
+<div>
+  <footer>
+    {{ partial "footer.html" . }}
+  </footer>
+</div>
+</html>

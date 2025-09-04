@@ -7,7 +7,7 @@ theme = "base"
 [taxonomies]
   category = "categories"
   tag = "tags"
-  issue = "issues"
+  volume = "volumes"
 
 [caches]
   [caches.images]

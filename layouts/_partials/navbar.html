@@ -1,4 +1,4 @@
-{{ $chapters := where $.Site.RegularPages.Reverse "Section" "chapters" }}
+{{ $novel := where .Site.RegularPages.Reverse "Section" "novel" }}
 
 <head>
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -9,18 +9,20 @@
   <div class="nav-left">
     <button id="dropdownToggle" class="material-icons" style="font-size: 40px;">menu</button>
     <div id="dropdownMenu" class="dropdown hidden">
-      <h1>Chapters</h1>
-      {{ range $chapters }}
-        <li>
-          <span class="index">
-            {{ if .Params.Draft }}
-              &#x2727;
-            {{ else }}
-              &#x2726;
-            {{ end }}
-          </span>
-          <a href="{{ .RelPermalink }}"><b>{{ .Title }}</b></a>
-        </li>
+      {{ range .Site.RegularPages.GroupByParam "volume"}}
+        <h1> Volume {{ .Key }}</h1>
+        {{ range .Pages.ByWeight.Reverse }}
+          <li>
+            <span class="index">
+              {{ if .Params.Draft }}
+                &#x2727;
+              {{ else }}
+                &#x2726;
+              {{ end }}
+            </span>
+            <a href="{{ .RelPermalink }}"><b>{{ .Title }}</b></a>
+          </li>
+        {{ end }}
       {{ end }}
     </div>
   </div>

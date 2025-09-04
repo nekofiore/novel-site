@@ -150,6 +150,10 @@ html {
   padding: 1rem;
   border: 1px solid rgba(92, 98, 98, 0.5019607843);
   background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
 }
 
 .content {
@@ -161,10 +165,49 @@ html {
   background-color: white;
 }
 
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-evenly;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  width: 80%;
+  margin: 0 auto;
+}
+.cards .card {
+  border: 1px solid rgba(92, 98, 98, 0.5019607843);
+  border-radius: 8px;
+  background-color: white;
+  margin: 1rem;
+  height: 24rem;
+  width: 20rem;
+  transition: all 0.15s ease;
+}
+.cards .card:hover {
+  border-color: rgba(52, 143, 221, 0.5019607843);
+  background-color: #fbfbfb;
+  transform: scale(1.035);
+  cursor: pointer;
+}
+.cards .card h1 {
+  font-size: medium;
+  font-weight: bold;
+}
+
 .intro {
   border: 1px solid rgba(92, 98, 98, 0.5019607843);
   width: 60vw;
   padding: 1rem;
+}
+
+.about {
+  border: 1px solid rgba(92, 98, 98, 0.5019607843);
+  width: 60vw;
+  padding: 1rem;
+}
+.about h1 {
+  font-size: x-large;
+  font-weight: bold;
 }
 
 .pink {

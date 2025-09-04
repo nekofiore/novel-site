@@ -1,12 +1,13 @@
 ---
 title: '{{ replace .File.ContentBaseName "-" " " | title }}'
 series: 'Chapter X'
+author: 'Salt'
 date: '{{ .Date }}'
 type: 'chapter'
 layout: 'single'
 categories: 'Novel'
 tags: []
 draft: true
-issue: 0
+volume: 0
 weight: 9999
 ---

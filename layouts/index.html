@@ -8,7 +8,7 @@
 </head>
 <body>
   {{ partial "navbar" .}}
-  <div>
+  <div class="container">
     <div class="main-logo">
       {{ partial "logo.html" }}
     </div>
@@ -16,6 +16,28 @@
       <div class="intro">
         {{ with .GetPage "intro.md"}}
           {{ .Content }}
+        {{ end }}
+      </div>
+    </div>
+    <h1>Diaries</h1>
+    <div class="cards">
+      {{ range .Site.Sections.ByWeight.Reverse }}
+        <button class="card">
+          {{ .Content }}
+        </button>
+      {{ end }}
+    </div>
+    <div class="content">
+      <div class="about">
+        {{ with .GetPage "about.md" }}
+          {{ .Content }}
+        {{ end }}
+      </div>
+      <div>
+        {{ with .Site.Taxonomies.volumes }}
+          {{ range .Page }}
+            <p> {{ .Title }}</p>
+          {{ end }}
         {{ end }}
       </div>
     </div>

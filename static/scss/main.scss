@@ -1,8 +1,5 @@
 @use 'base';
-
-$fiore-pink: #ff759a;
-$fiore-blue: #67b5ff;
-$default-border: 1px solid #5c626280;
+@use 'variables';
 
 // bg
 html {
@@ -10,18 +7,18 @@ html {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  // background-image: url('/images/fiore_guitar.png');
-
-  // Gradient
-  // background-image: linear-gradient(to bottom, #ffffffff, #ffffffff 25%, #ffffff00, #00000000 100%), url('/images/fiore_guitar.png');
 }
 
 // container
 .container {
   margin: 0 auto;
   padding: 1rem;
-  border: $default-border;
+  border: variables.$default-border;
   background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
 }
 
 // for everything
@@ -34,6 +31,36 @@ html {
   }
 }
 
+// for cards
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-evenly;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  width: 80%;
+  margin: 0 auto;
+  .card {
+    border: variables.$default-border;
+    border-radius: 8px;
+    background-color: white;
+    margin: 1rem;
+    height: 24rem;
+    width: 20rem;
+    transition: all 0.15s ease;
+    &:hover {
+      border-color: #348fdd80;
+      background-color: #fbfbfb;
+      transform: scale(1.035);
+      cursor: pointer;
+    }
+    h1 {
+      font-size: medium;
+      font-weight: bold;
+    }
+  }
+}
+
 // intro
 .intro {
   border: 1px solid #5c626280;
@@ -41,10 +68,21 @@ html {
   padding: 1rem;
 }
 
+// about
+.about {
+  border: 1px solid #5c626280;
+  width: 60vw;
+  padding: 1rem;
+  h1 {
+    font-size: x-large;
+    font-weight: bold;
+  }
+}
+
 // colors
 .pink {
-  color: $fiore-pink;
+  color: variables.$fiore-pink;
 }
 .blue {
-  color: $fiore-blue;
+  color: variables.$fiore-blue;
 }

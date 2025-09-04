@@ -1,13 +1,14 @@
 ---
 title: 'New Mission'
 series: 'Chapter One'
+author: 'Salt'
 date: '2025-08-29T06:27:41-07:00'
 type: 'chapter'
 layout: 'single'
 categories: 'Novel'
 tags: []
 draft: true
-issue: 1
+volume: 1
 weight: 1
 ---
 
