@@ -1,12 +1,8 @@
-{{ $scss := resources.Get "scss/main.scss" }}
-{{ $options := (dict "targetPath" "css/main.css" "enableSourceMap" true) }}
-{{ $style := $scss | toCSS $options }}
-
 <!DOCTYPE html>
 <html lang="{{ site.Language.LanguageCode }}" dir="{{ or site.Language.LanguageDirection `ltr` }}">
 <head>
   {{ partial "title" . }}
-  <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+  <link rel="stylesheet" href="/css/main.css">
   <link rel="icon" href="favicon.png">
   {{ partial "title.html" .}}
 </head>

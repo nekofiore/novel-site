@@ -1,47 +1,6 @@
-@charset "UTF-8";
 @use 'variables';
+@use 'color';
 
-$border: 1px solid #5c626280;
-
-// Root
-:root {
-  font-family: system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 450;
-
-  background-color: #ffffff;
-  color: #000;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex: auto;
-  text-align: center;
-}
-
-// body 
-body {
-  justify-content: center;
-  margin-top: 3rem;
-}
-
-// For title logo 
-.main-logo {
-  padding-top: 1em;
-}
-
-// Custom <hr> tag
-hr {
-  border: none;
-  color: #000;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  &:before {
-    display: block;
-    text-align: center;
-    content: "\2726";
-  }
-}
 
 // Top navigation bar
 .navbar {
@@ -50,7 +9,7 @@ hr {
   justify-content: space-between;
   align-items: center;
   width: 100vw;
-  height: 3.25rem;
+  height: 3.5rem;
   background-color: white;
   border-bottom: 1px solid #5c626280;
   position: fixed;
@@ -83,8 +42,8 @@ hr {
     text-align: left;
     white-space: nowrap;
     overflow: hidden;
-    border-right: variables.$border;
-    border-bottom: variables.$border;
+    border-right: variables.$default-border;
+    border-bottom: variables.$default-border;
     background-color: white;
     top: 3.25rem;
     left: 0;
@@ -118,5 +77,6 @@ hr {
   }
   .hidden {
     max-width: 0;
+    border: none transparent;
   }
 }

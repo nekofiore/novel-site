@@ -1,3 +1,3 @@
 #!/bin/bash
 
-sass --watch assets/scss:static/css
+sass --watch --source-map static/scss:static/css

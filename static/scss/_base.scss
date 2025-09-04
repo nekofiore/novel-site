@@ -1,0 +1,153 @@
+@charset "UTF-8";
+@use 'variables';
+
+$default-border: 1px solid #5c626280;
+
+// Root
+:root {
+  font-family: system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 450;
+
+  background-color: #ffffff;
+  color: #000;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: auto;
+  text-align: center;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+  border: none transparent;
+}
+
+// body 
+body {
+  justify-content: center;
+  margin-top: 7rem;
+}
+
+// For title logo 
+.main-logo {
+  margin-top: 1em;
+}
+
+// Custom <hr> tag
+hr {
+  border: none;
+  color: #000;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  &:before {
+    display: block;
+    text-align: center;
+    content: "\2726";
+  }
+}
+
+// container
+.container {
+  margin: 0 auto;
+  padding: 1rem;
+  border: $default-border;
+  background-color: white;
+}
+
+// for everything
+.content {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+// intro
+.intro {
+  border: 1px solid #5c626280;
+  width: 60vw;
+  padding: 1rem;
+}
+
+// Top navigation bar
+.navbar {
+  z-index: 5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 3.25rem;
+  background-color: white;
+  border-bottom: 1px solid #5c626280;
+  position: fixed;
+  top: 0;
+  left: 0;
+  .nav-left, .nav-center, .nav-right {
+    z-index: 5;
+    position: relative;
+    display: flex;
+    align-items: center;
+    a, button {
+      display: block;
+      background: none;
+      border: none;
+      color: #454545;
+      min-width: 40px;
+      margin: 0.25rem;
+      text-decoration: none;
+      object-fit: scale-down;
+      img {
+        max-height: 48px;
+        max-width: auto;
+      }
+    }
+  }
+  .dropdown {
+    z-index: 4;
+    display: block;
+    position: absolute;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: $default-border;
+    border-bottom: $default-border;
+    background-color: white;
+    top: 3.25rem;
+    left: 0;
+    height: 100vh;
+    max-width: 10rem;
+    transition: max-width 0.25s ease-in;
+    h1 {
+      font-size: medium;
+      font-weight: bold;
+      margin: 0;
+      padding: 0;
+    }
+    li {
+      display: flex;
+      align-items: center;
+      text-align: left;
+      margin-top: 0.25rem;
+      margin-bottom: 0.25rem;
+      width: 100%;
+      height: 1.25rem;
+      font-size: 14px;
+      .index {
+        min-width: 1rem;
+      }
+    }
+    .hr-normal {
+      width: 100%;
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+  }
+  .hidden {
+    max-width: 0;
+  }
+}

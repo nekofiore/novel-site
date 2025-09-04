@@ -2,23 +2,18 @@
 
 $fiore-pink: #ff759a;
 $fiore-blue: #67b5ff;
+$default-border: 1px solid #5c626280;
 
-// body
-:root {
-  background-image: url('/static/images/amefioreboba.png');
-  background-size: cover;
-}
-
-body {
-  background-image: url('/static/images/amefioreboba.png');
-  background-size: cover;
+// bg
+html {
+  background: url('/images/fiore_guitar.png') center / cover no-repeat scroll;
 }
 
 // container
 .container {
   margin: 0 auto;
   padding: 1rem;
-  border: 1px solid #5c626280;
+  border: $default-border;
   background-color: white;
 }
 
@@ -27,6 +22,9 @@ body {
   padding: 1rem;
   display: flex;
   justify-content: center;
+  * {
+    background-color: white;
+  }
 }
 
 // intro
