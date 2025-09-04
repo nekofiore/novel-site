@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+$border: 1px solid #5c626280;
+
+// Root
+:root {
+  font-family: system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 450;
+
+  background-color: #ffffff;
+  color: #000;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: auto;
+  text-align: center;
+}
+
+// body 
+body {
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+// For title logo 
+.main-logo {
+  padding-top: 1em;
+}
+
+// Custom <hr> tag
+hr {
+  border: none;
+  color: #000;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  &:before {
+    display: block;
+    text-align: center;
+    content: "\2726";
+  }
+}

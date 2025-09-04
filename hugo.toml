@@ -7,7 +7,11 @@ theme = "base"
 [taxonomies]
   category = "categories"
   tag = "tags"
+  issue = "issues"
 
 [caches]
   [caches.images]
     dir = ':cacheDir/images'
+  
+[markup.goldmark.renderer]
+  unsafe = true

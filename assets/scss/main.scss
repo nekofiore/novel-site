@@ -1,0 +1,32 @@
+@use 'base';
+@use 'color';
+
+// container
+.container {
+  margin: 0 auto;
+  padding: 1rem;
+  border: base.$border;
+  background-color: white;
+}
+
+// for everything
+.content {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+// intro
+.intro {
+  border: base.$border;
+  width: 60vw;
+  padding: 1rem;
+}
+
+// colors
+.pink {
+  color: color.$fiore-pink;
+}
+.blue {
+  color: color.$fiore-blue;
+}

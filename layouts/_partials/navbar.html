@@ -1,0 +1,35 @@
+{{ $chapters := where $.Site.RegularPages.Reverse "Section" "chapters" }}
+
+<head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined">
+  <link rel="stylesheet" href="/css/navbar.css">
+</head>
+<div class="navbar">
+  <div class="nav-left">
+    <button id="dropdownToggle" class="material-icons" style="font-size: 40px;">menu</button>
+    <div id="dropdownMenu" class="dropdown hidden">
+      <h1>Chapters</h1>
+      {{ range $chapters }}
+        <li>
+          <span class="index">
+            {{ if .Params.Draft }}
+              &#x2727;
+            {{ else }}
+              &#x2726;
+            {{ end }}
+          </span>
+          <a href="{{ .RelPermalink }}"><b>{{ .Title }}</b></a>
+        </li>
+      {{ end }}
+    </div>
+  </div>
+  <div class="nav-center">
+    <a href="/"><img src="/favicon.png"></a>
+  </div>
+  <div class="nav-right">
+    <a href="/" class="material-icons" style="font-size: 40px;">menu_book</a>
+    <a href="/" class="material-symbols-outlined" style="font-size: 36px;">globe</a>
+  </div>
+</div>
+<script src="/js/navbar.js"></script>

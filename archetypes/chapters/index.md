@@ -6,6 +6,7 @@ type: 'chapter'
 layout: 'single'
 categories: 'Novel'
 tags: []
-draft: false
+draft: true
+issue: 0
 weight: 9999
 ---

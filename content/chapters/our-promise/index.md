@@ -8,6 +8,7 @@ layout: 'single'
 categories: 'Novel'
 tags: ['Stella', 'Lunella']
 draft: false
+issue: 1
 weight: 0
 ---
 
@@ -29,9 +30,7 @@ The sweet scent of the flower field swept away all worries of the upcoming summe
 
 I looked toward her finger's direction, and to my surprise, there was a small flock of tiny finches flying under the moon. It was an odd sight, as these types of finches aren’t known to travel during the spring.
 
-"They’re quite charming… but don’t they rarely fly during this time?"
-
-The two witches practicing flight~		 
+"They’re quite charming… but don’t they rarely fly during this time?" 
 
 "Well… yes. But that must mean something special is coming up soon! Especially since it’s the middle of graduation season! Remember what Miss Selena told us—‘Night-winged finches only cross the skies at midnight in presence of a changing fate…’ or something along the lines of that." In those brief moments, her eyes sparkled brighter than any comet in the sky.
 
@@ -89,9 +88,11 @@ Miss Selena gave out a slight sigh. "Ah, children are too clever nowadays…" Sh
 
 The moment she said those lines, I realized that the time we spent together had ended too abruptly. Despite Stella and I being of the same age, she was always ahead of the curve due to her outstanding talent. She was a remarkable child—one who was naturally gifted with the ability to understand and control magic at ease.
 
-Her existence was a love letter to magic itself.
+*Her existence was a love letter to magic itself.*
 
-"Hmmph, fine. I’ll go." Miss Selena smiled and took hold of my hand, dragging me towards the outside of the venue.
+"Hmmph. Fine. I’ll go." I reluctantly said.
+
+Miss Selena smiled and took hold of my hand, dragging me towards the outside of the venue.
 
 ---
 
@@ -111,25 +112,25 @@ Instead, she held a different expression. It wasn’t one of happiness, but rath
 
 The voice rang from the silhouette behind Stella. She seemed to be an older witch, likely in her thirties. 
 
-When she walked closer, she revealed herself under the sunlight. Her pristine, golden hair glistened beautifully under the radiant sun, flowing smoothly in sync with the mana in the atmosphere.
+When she walked closer, she revealed herself under the sunlight. Her pristine, dark blue hair glistened beautifully under the radiant sun, flowing smoothly in sync with the mana in the atmosphere.
 
 Any masterful witch would immediately recognize who she was at first glance.
 
 "Mist," Selena said. "You know you aren’t welcome here anymore."
 
-"Oh? Who made those rules?" The witch, recognized as ‘Mist’, briefly glanced at me, before turning her attention towards Stella. "Is it wrong for a witch like me to take interest in a prodigy like her? A witch of her potential only appears once every generation."
+"Oh? Who made those rules?" The witch, recognized as 'Mist', briefly glanced at me, before turning her attention towards Stella. "Is it wrong for a witch like me to take interest in a prodigy like her? Someone of her potential only appears once every generation."
 
 "The academy has never disclosed any information about Stella to the public. There should be no way you would have known about her."
 
-Mist crossed her arms. "Well, you’ve failed that task." Her white gloves outlined the frame of her hands to near perfection. "Besides, why wouldn’t the administration notify me about her? Once witches graduate, they are taken in as an apprentice to another witch as their master. No one would object to me taking her in as an apprentice."
+Mist crossed her arms. "Well, you’ve clearly failed that task." Her white gloves outlined the frame of her hands to near perfection. "Besides, why wouldn’t the administration notify me about her? Once witches graduate, they are taken in as an apprentice to another witch as their master. *No one* would object to me taking her in as an apprentice."
 
 "No one will give you the chance after what you’ve done in Astrea." Selena responded with distaste in her mouth. "You know exactly why you’ve been exiled from the Magic Association and our academy."
 
-"Now now, it’s a bit hurtful of you to bring up the past. After all, you know why I did what I had to do." She adjusted her dress a bit. "Let’s not waste more time on this idle talk. I’m sure you won’t mind me looking over Stella for a few years."
+"It’s a bit hurtful of you to bring up the past, you know. After all, you understood why I did what I had to do." She adjusted her dress a bit. "Let’s not waste more time on this idle talk. I'll be taking in Stella as an apprentice for a few years."
 
 "I won’t let you." Selena stepped forward, firmly standing her ground.
 
-"So adamant…" Mist tugged on Stella’s robe. "Come on, I’ll take you on as my apprentice."
+"So adamant…" Mist tugged on Stella’s robe. "Come on, I’ll take you as my apprentice."
 
 Stella swiftly pulled away from Mist’s grasp. 
 
@@ -137,27 +138,29 @@ Stella swiftly pulled away from Mist’s grasp.
 
 "It’s too loud… The wind…"
 
-The ‘wind’ Stella is referring to wasn’t the actual wind. She was referring to the subtle, yet piercing wails of mana flowing throughout the forest.
+The 'wind' Stella's referring to wasn’t the actual wind. She was referring to the subtle, yet piercing wails of mana flowing throughout the forest.
 
 "Mist. Leave the academy grounds, and we can solve this issue peacefully." Selena’s focus grew even more intense.
 
-"Hmm…" The atmosphere was instantaneously engulfed by an immense amount of pressure. Everyone in the vicinity instantly recognized, but was too afraid to move in even the slightest. "You know, Selena. Have you ever doubted me, once?" Clover readjusted her glove. "You could have stopped me that moment when the ‘incident’ happened. Yet, you never did."
+"Hmm…" The atmosphere was instantaneously engulfed by an immense amount of pressure. Everyone in the vicinity instantly recognized, but was too afraid to move in even the slightest. "You know, Selena. Have you ever doubted me once?" Mist readjusted her glove. "You could have stopped me that moment when the 'incident' happened. Yet, you never did."
 
 Selena’s focus grew even more intense. The air stopped flowing, the trees ceased to sway, and the leaves were no longer rustling.
 
-"You know, I’ve heard a tale of a witch of the same generation as us. She was talented in her own way—she was the first to discover an art called ‘pure magic’. It was an art that allowed the user to directly manipulate mana in its purest form. She essentially had the potential to change the world at her fingertips."
+"You know, I’ve heard a tale of a witch of the same generation as us. She was talented in her own way. She was the first to discover the art of *pure magic*. It was an art that allowed the user to directly manipulate mana in its purest form. She essentially had the potential to change the world at her fingertips. But, she threw that all away. She left her life as a witch behind, settling down to live a secluded life, abandoning all practices of magic."
 
-"But, she threw that all away. She left her life as a witch behind, settling down to live a secluded life, abandoning all forms of magic."
+The whole venue remained silently still, in face of her monologue.
 
-"To this day, no one has managed to replicate that same art. The art that could single-handedly end the silent war between the nations, and she decided to keep it as her own little secret. Don’t you understand? I’ve dedicated my whole life to reaching that height of magic, and I had to witness the one who reached it throw it all away."
+"To this day, no one has managed to replicate that same art. The magic that could single-handedly end the war between our nations, and she decided to keep it as her own little secret. Don’t you understand? We have all dedicated our whole lives to reaching those heights of magic, and I had to witness her throw it all away."
 
-"You’ve gone mad, Mist." Selena put her arm in front of me. "That is never a valid  reason to go and do all of this."
+"You’ve gone mad, Mist." Selena put her arm in front of me. "That is never a valid reason to go and do all of this. You understand the struggles *she* had to endure."
 
 "But, you know… "
 
 I saw Stella as she dropped to the floor, cowering as her hands covered her ears. She was crying, begging for all of the noise to stop.
 
 "... I’m not the type to let go of an opportunity like this."
+
+A swift, swirling current started to circle around the venue. It was the piercing movement of mana.
 
 "Luna! Stand back!"
 
@@ -167,21 +170,21 @@ All I saw was the abyss. No light, no sound—nothing at all. There was only an 
 
 However, a soft whisper echoed in my mind. An unfamiliar voice, yet one I knew. 
 
-Sweet dreams, my princess.
+*Sweet dreams, my princess.*
 
 It comforted me as my consciousness began to falter.
 
-Rest well, for the tempest you are about to endure.
+*Rest well, for the tempest you are about to endure.*
 
 All of my memories began to scatter into pieces, vanishing as they touched the abyss. The world felt cold, and I could no longer feel a hint of anything.
 
 At the end of it all, there was one final whisper I could hear before my mind went completely blank.
 
-I will be waiting for you at the end of the world, Lunella.
+*I will be waiting for you at the end of the world, Lunella.*
 
 ---
 
-Several years later, through the eyes of an apple merchant…
+*Several years later, through the eyes of an apple merchant…*
 
 "Apples here, apples here! Come get your apples here!" I stood on the road that entered the city, waving to the travelers passing by. "Apples only for a few coppers here!"
 
@@ -191,7 +194,7 @@ Selling apples is simply one of my humble hobbies. Nowadays, I don’t necessari
 
 "Hey there." A woman under a heavy cowl walked up to me, pointing at an apple in my basket. "You got any more of those?"
 
-To my surprise, it was quite an awkward question to open with—one awkward enough for me to hesitate a bit before answering. 
+To my surprise, it was quite a question to open with—one awkward enough for me to hesitate a bit before answering. 
 
 "Yes... they came directly from the northern region of Sorena. If you want, I could give you a discount on a few apples I have in stock—"
 

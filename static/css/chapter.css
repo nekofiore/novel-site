@@ -1,13 +1,44 @@
-/* @import url("style.css"); */
-
+@charset "UTF-8";
 :root {
-  font-family: system-ui, "Helvetica Neue", Helvetica, nimbus-sans-l, Arial, sans-serif;
+  font-family: system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 450;
-
   background-color: #ffffff;
   color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: auto;
+  text-align: center;
+}
 
+body {
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.main-logo {
+  padding-top: 1em;
+}
+
+hr {
+  border: none;
+  color: #000;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+hr:before {
+  display: block;
+  text-align: center;
+  content: "✦";
+}
+
+:root {
+  font-family: system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 450;
+  background-color: #ffffff;
+  color: #000;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,7 +61,7 @@
   width: 40rem;
   min-width: 32rem;
   max-width: 75vw;
-  border: 1px solid #5c626280;
+  border: 1px solid rgba(92, 98, 98, 0.5019607843);
   border-radius: 0;
   padding: 1in;
 }
@@ -43,42 +74,42 @@
   text-align: left;
   padding: 1rem;
   background-color: #ffffff;
-  border: 1px solid #5c626280;
+  border: 1px solid rgba(92, 98, 98, 0.5019607843);
   width: 20vw;
   height: 80vh;
   top: 7.5vh;
-  .list-header {
-    display: block;
-    h1 {
-      text-align: center;
-      color:#000;
-      font-size: 1.25rem;
-      margin-top: 0;
-    }
-  }
-  div {
-    display: flex;
-    gap: 1rem;
-    align-items: baseline;
-    .index {
-      min-width: 1rem;
-    }
-    a {
-      color: #474652;;
-      display: block;
-      transition: 0.1s ease-in-out;
-      &:hover {
-        color: #3379d4;
-        text-decoration: underline;
-      }
-    }
-    h2 {
-      font-size: medium;
-      margin-top: 0.25rem;
-      margin-bottom: 0.25rem;
-      padding: 0;
-    }
-  }
+}
+.page-list .list-header {
+  display: block;
+}
+.page-list .list-header h1 {
+  text-align: center;
+  color: #000;
+  font-size: 1.25rem;
+  margin-top: 0;
+}
+.page-list div {
+  display: flex;
+  gap: 1rem;
+  align-items: baseline;
+}
+.page-list div .index {
+  min-width: 1rem;
+}
+.page-list div a {
+  color: #474652;
+  display: block;
+  transition: 0.1s ease-in-out;
+}
+.page-list div a:hover {
+  color: #3379d4;
+  text-decoration: underline;
+}
+.page-list div h2 {
+  font-size: medium;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+  padding: 0;
 }
 
 /* Pagination, for linking to previous/next pages */
@@ -95,47 +126,46 @@
   right: -1.5rem;
   top: 50%;
   transform: translate(-50%, -50%);
-
-  .prev-page {
-    position: relative;
-    &:hover {
-      text-decoration: none;
-    }
-  }
-  .next-page {
-    position: relative;
-    &:hover {
-      text-decoration: none;
-    }
-  }
-  .list-chapters {
-    position: relative;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    align-items: center;
-    text-align: center;
-    &:hover {
-      text-decoration: none;
-    }
-  }
-  .info {
-    position: absolute;
-    margin-bottom: 1rem;
-    bottom: 0;
-  }
 }
-
-
+.pagination-bar .prev-page {
+  position: relative;
+}
+.pagination-bar .prev-page:hover {
+  text-decoration: none;
+}
+.pagination-bar .next-page {
+  position: relative;
+}
+.pagination-bar .next-page:hover {
+  text-decoration: none;
+}
+.pagination-bar .list-chapters {
+  position: relative;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  align-items: center;
+  text-align: center;
+}
+.pagination-bar .list-chapters:hover {
+  text-decoration: none;
+}
+.pagination-bar .info {
+  position: absolute;
+  margin-bottom: 1rem;
+  bottom: 0;
+}
 
 /* For the headings (title, series, etc.) */
 .header-info {
   text-align: center;
   margin: 0;
 }
+
 .heading-series {
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
 }
+
 .heading-title {
   font-size: 1rem;
   font-weight: 400;
@@ -153,11 +183,11 @@ hr {
   border: none;
   color: #000;
   margin: 2em;
-  &:before {
-    display: block;
-    text-align: center;
-    content: "\2726";
-  }
+}
+hr:before {
+  display: block;
+  text-align: center;
+  content: "✦";
 }
 
 /* Base Customization for <a> and <button> */
@@ -168,10 +198,10 @@ a, button {
   color: #71afff;
   text-decoration: inherit;
   transition: color 0.1s ease-in-out;
-  &:hover {
-    color: #3379d4;
-    cursor: pointer;
-  }
+}
+a:hover, button:hover {
+  color: #3379d4;
+  cursor: pointer;
 }
 
 .published {
@@ -183,10 +213,10 @@ a, button {
 .hr-normal {
   margin-left: 0;
   margin-right: 0;
-  border: 0.05rem solid #5c626280;
-  &:before {
-    content: "";
-  }
+  border: 0.05rem solid rgba(92, 98, 98, 0.5019607843);
+}
+.hr-normal:before {
+  content: "";
 }
 
 /* Denotes the very beginning <hr> of the chapter */
@@ -194,12 +224,12 @@ a, button {
   border: none;
   color: #000;
   margin: 2em;
-  &:before {
-    font-weight: bold;
-    display: block;
-    text-align: center;
-    content: "\2726  START \2726";
-  }
+}
+.chapter-start:before {
+  font-weight: bold;
+  display: block;
+  text-align: center;
+  content: "✦ START ✦";
 }
 
 /* Denotes the very end <hr> of the chapter */
@@ -207,12 +237,12 @@ a, button {
   border: none;
   color: #000;
   margin: 2em;
-  &:before {
-    font-weight: bold;
-    display: block;
-    text-align: center;
-    content: "\2726  END \2726";
-  }
+}
+.chapter-end:before {
+  font-weight: bold;
+  display: block;
+  text-align: center;
+  content: "✦ END ✦";
 }
 
 /* hidden class */
@@ -230,3 +260,5 @@ p {
   margin-right: 0;
   margin-bottom: 2rem;
 }
+
+/*# sourceMappingURL=chapter.css.map */

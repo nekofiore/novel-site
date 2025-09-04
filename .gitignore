@@ -1,4 +1,5 @@
 # hugo related things
+public/
 .hugo_build.lock
 
 # misc mac stuff

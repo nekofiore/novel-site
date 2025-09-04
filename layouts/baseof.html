@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html lang="{{ site.Language.LanguageCode }}" dir="{{ or site.Language.LanguageDirection `ltr` }}">
 <head>
-  <title>&#x273F; nekofiore</title>
-  <link rel="stylesheet" href="/css/style.css">
+  {{ partial "title" . }}
+  <link rel="stylesheet" href="/css/main.css">
   <link rel="icon" href="favicon.png">
   {{ partial "title.html" .}}
 </head>
-<div class="main-logo">
-  {{ partial "logo.html" }}
-</div>
-<hr class="hr-closed">
 <body>
-  <div class="chapter">
-    <header>
-      {{ .Title }}
-    </header>
-    {{ .Content }}
+  {{ partial "navbar" .}}
+  <div>
+    <div class="main-logo">
+      {{ partial "logo.html" }}
+    </div>
+    <div class="content">
+      <div class="intro">
+        {{ with .GetPage "intro.md"}}
+          {{ .Content }}
+        {{ end }}
+      </div>
+    </div>
   </div>
 </body>
 <div>

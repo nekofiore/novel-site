@@ -13,6 +13,8 @@
 </head>
 
 <body>
+  <!-- Menu -->
+   {{ partial "navbar" .}}
   <!-- Main Logo -->
   <div class="main-logo">
     {{ partial "logo.html" }}
@@ -25,6 +27,9 @@
         <h1 class="heading-series"> {{ .Params.Series }} </h1>
         <h2 class="heading-title"> "{{ .Title }}" </h2>
         <time class="published"> First Published: {{ .Params.Date | time.Format ":date_medium" }} </time>
+        {{ if .Params.Draft }}
+          <p><b>NOTE: This page is still in its drafting phase. Major changes may still occur.</b></p>
+        {{ end }}
       </header>
       <hr class="hr-normal">
       {{ with .Resources.Get "blurb.md" }}
@@ -60,6 +65,14 @@
       {{ end }}
     </div>
   </div>
+
+  <!-- Hidden pagination for script -->
+  {{ range where .Parent.RegularPages "Weight" $prevChapter }}
+    <a id="prevPage" class="prev-page material-icons" style="display: none" href="{{ .RelPermalink }}">arrow_drop_up</a>
+  {{ end }}
+  {{ range where .Parent.RegularPages "Weight" $nextChapter }}
+    <a id="nextPage" class="next-page material-icons" style="display: none;" href="{{ .RelPermalink }}">arrow_drop_down</a>
+  {{ end }}
   
   <!-- Footer -->
   <div>
@@ -68,17 +81,4 @@
     </footer>
   </div>
 </body>
-
-<!-- This pagination returns the user to the list of chapters, or goes to prev/next chapters -->
-<div class="pagination-bar">
-  <button id="toggleList" class="list-chapters material-icons">menu_open</button>
-  <button class="info material-icons">help</button>
-
-  {{ range where .Parent.RegularPages "Weight" $prevChapter }}
-    <a id="prevPage" class="prev-page material-icons" style="font-size: 48px;" href="{{ .RelPermalink }}">arrow_drop_up</a>
-  {{ end }}
-  {{ range where .Parent.RegularPages "Weight" $nextChapter }}
-    <a id="nextPage" class="next-page material-icons" style="font-size: 48px;" href="{{ .RelPermalink }}">arrow_drop_down</a>
-  {{ end }}
-</div>
 </html>

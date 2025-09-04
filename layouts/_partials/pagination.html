@@ -1,0 +1,17 @@
+{{ $currentChapter := .Weight }}
+{{ $prevChapter := sub $currentChapter 1 }}
+{{ $nextChapter := add $currentChapter 1 }}
+
+<!-- This pagination returns the user to the list of chapters, or goes to prev/next chapters -->
+<!-- ( This bit of html is deprecated ) -->
+<div class="pagination-bar">
+  <button id="toggleList" class="list-chapters material-icons">menu_open</button>
+  <button class="info material-icons">help</button>
+
+  {{ range where .Parent.RegularPages "Weight" $prevChapter }}
+    <a id="prevPage" class="prev-page material-icons" style="font-size: 48px;" href="{{ .RelPermalink }}">arrow_drop_up</a>
+  {{ end }}
+  {{ range where .Parent.RegularPages "Weight" $nextChapter }}
+    <a id="nextPage" class="next-page material-icons" style="font-size: 48px;" href="{{ .RelPermalink }}">arrow_drop_down</a>
+  {{ end }}
+</div>
