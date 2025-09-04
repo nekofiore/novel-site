@@ -1,5 +1,6 @@
 # hugo related things
 public/
+resources/
 .hugo_build.lock
 
 # misc mac stuff
