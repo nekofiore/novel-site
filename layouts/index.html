@@ -27,16 +27,17 @@
     <h1>Salt's Diaries</h1>
     <div class="cards">
       {{ range .Site.Sections.ByWeight.Reverse }}
+        {{ $link := .RelPermalink }}
         {{ $bg := .Resources.Get "card-bg.png"}}
         {{ if $bg }}
-        <button class="card" style="background: url('{{ $bg.RelPermalink }}') center / cover;">
+        <a class="card" href="{{ $link }}" style="background: url('{{ $bg.RelPermalink }}') center / cover;">
         {{ else }}
-        <button class="card">
+        <a class="card" href="{{ $link }}">
         {{ end }}
           <div>
             {{ .Content }}
           </div>
-        </button>
+        </a>
       {{ end }}
     </div>
     <div class="content">

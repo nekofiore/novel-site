@@ -1,4 +1,5 @@
 {{ $novel := where .Site.RegularPages.Reverse "Section" "novel" }}
+{{ $blog := .Site.GetPage "section" "blog" }}
 
 <head>
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -23,6 +24,19 @@
             <a href="{{ .RelPermalink }}"><b>{{ .Title }}</b></a>
           </li>
         {{ end }}
+      {{ end }}
+      <h1> {{ $blog.Title }} </h1>
+      {{ range $blog.Pages }}
+          <li>
+            <span class="index">
+              {{ if .Params.Draft }}
+                &#x2727;
+              {{ else }}
+                &#x2726;
+              {{ end }}
+            </span>
+            <a href="{{ .RelPermalink }}"><b>{{ .Title | truncate 20 }}</b></a>
+          </li>
       {{ end }}
     </div>
   </div>

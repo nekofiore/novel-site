@@ -1,0 +1,12 @@
+<h1>{{ .Title }}</h1>
+<hr>
+<h2>{{ .Title }}</h2>
+<ul>
+  {{ range .Pages }}
+    <li>
+      <a href="{{ .Permalink }}">{{ .Title }}</a>
+      <br>
+      <small>{{ .Params.Author }} | {{ .Date.Format "January 2, 2006" }}</small>
+    </li>
+  {{ end }}
+</ul>

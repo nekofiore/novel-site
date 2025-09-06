@@ -1,0 +1,61 @@
+@use 'base';
+@use 'variables';
+
+ol, ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+// overall top-down flex
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: none;
+  margin: 0;
+  padding: 1rem;
+}
+
+// splits the blog dashboard into two columns: one main on left, and a variety of rows on the right.
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: variables.$default-border;
+  min-height: 100rem;
+  height: 100%;
+  width: 75vw;
+  margin: 0 auto;
+  .bulletin {
+    border: inherit;
+    width: 70%;
+    h1 {
+      font-size: x-large;
+      font-weight: bold;
+    }
+    .list-item {
+      display: block;
+      text-align: left;
+      transition: background-color 0.1s ease;
+      * {
+        background: transparent;
+      }
+      &:hover {
+        border-color: variables.$fiore-blue;
+        background-color: rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        font-size: large;
+        margin: 0.5rem;
+      }
+      small {
+        margin: 0.5rem;
+      }
+    }
+  }
+  .side {
+    border: inherit;
+    width: 25%;
+  }
+}

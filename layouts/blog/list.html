@@ -1,0 +1,38 @@
+{{ define "main" }}
+  {{ $posts := (site.GetPage "section" "blog").Pages.ByDate.Reverse }}
+  <head>
+    <link rel="stylesheet" href="/css/blog.css">
+  </head>
+  <body>
+    <div>
+      {{ partial "logo.html" }}
+    </div>
+    <div>
+      <p> Welcome to the dumb ramblings of a random developer on the Internet.</p>
+      <p> Hope you enjoy your stay.</p>
+    </div>
+    <div class="content">
+      <div class="main">
+        <div class="bulletin">
+          <h1>Latest Posts</h1>
+          <ol>
+            {{ range $posts }}
+            <a href="{{ .RelPermalink }}">
+              <div class="list-item">
+                <h1> {{ .Title }} </h1>
+                <small> 
+                  {{ .Params.Author }} | {{ .Date.Format "2 Jan 2006" }} 
+                </small>
+              </div>
+            </a>
+            <hr>
+            {{ end }}
+          </ol>
+        </div>
+        <div class="side">
+          side
+        </div>
+      </div>
+    </div>
+  </body>
+{{ end }}

@@ -34,8 +34,8 @@
       <hr class="hr-normal">
       {{ with .Resources.Get "blurb.md" }}
         <div class="centered"> {{ .Content }} </div>
+        <hr class="hr-start">
       {{ end }}
-      <hr class="hr-start">
       {{ .Content }}
       <hr class="chapter-end">
       <!-- This section represents the 'after' of the chapter  -->

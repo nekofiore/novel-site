@@ -2,8 +2,6 @@ baseURL = 'nekofiore.net/'
 languageCode = 'en-us'
 title = 'nekofiore'
 
-theme = "base"
-
 [taxonomies]
   category = "categories"
   tag = "tags"
