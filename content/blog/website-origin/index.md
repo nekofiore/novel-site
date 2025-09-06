@@ -28,6 +28,13 @@ So, after deciding to pick up some web development, I finally started to get to 
 
 I will dive much deeper into these topics in future blogs, but for now I'll leave the reader to these small tidbits to digest.
 
-Hopefully 
+### "So, why am I here again?"
 
+Well, I'm not sure how you stumbled upon here either, but something made you click anyway (whether you were a tester, friend, or someone genuinely curious about what I had to offer). 
+
+Either way, I appreciate you taking the time to visit this small corner of the Internet. If you fall under the latter: thank you for checking my content out as well! It's always nice having eyes on my creations (even if it's invisible to me), because my work is at least being noticed by some stranger over the web.
+
+Expect to see a lot more coming to this website over the next few years. This is intended to be a long-term project, so I hope you could stay to witness my journey. 
+
+If you want to contact me and give feedback or suggestions, you can directly message me via Discord **@tensofu**.
 

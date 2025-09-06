@@ -8,4 +8,4 @@ title: 'About'
 
 You probably know me online as **tensofu** or **Salt**. I am simply an artist/developer that wants to bring things to life.
 
-If you are reading this, thank you for paying a visit to this page!
+If you are new here, check out whatever I have linked on the **top right** icon!
