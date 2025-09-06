@@ -28,10 +28,14 @@
       margin: 0.25rem;
       text-decoration: none;
       object-fit: scale-down;
-      img {
-        max-height: 48px;
-        max-width: auto;
+      &:hover {
+        cursor: pointer;
       }
+    }
+    img {
+      max-height: 48px;
+      max-width: auto;
+      display: block;
     }
   }
   .dropdown {
@@ -52,7 +56,7 @@
     h1 {
       font-size: medium;
       font-weight: bold;
-      margin: 0;
+      margin: 0.25rem;
       padding: 0;
     }
     li {

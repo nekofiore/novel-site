@@ -9,7 +9,7 @@
 <body>
   {{ partial "navbar" .}}
   <div class="container">
-    <div class="main-logo">
+    <div>
       {{ partial "logo.html" }}
     </div>
     <div class="content">
@@ -22,7 +22,12 @@
     <h1>Salt's Diaries</h1>
     <div class="cards">
       {{ range .Site.Sections.ByWeight.Reverse }}
+        {{ $bg := .Resources.Get "card-bg.png"}}
+        {{ if $bg }}
+        <button class="card" style="background: url('{{ $bg.RelPermalink }}') center / cover;">
+        {{ else }}
         <button class="card">
+        {{ end }}
           <div>
             {{ .Content }}
           </div>
