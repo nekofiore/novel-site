@@ -7,5 +7,5 @@ weight: 2
 
 # World
 
-Landing page for world
+All about the environment, politics, and mechanisms of the world.
 

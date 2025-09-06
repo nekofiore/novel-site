@@ -7,4 +7,4 @@ weight: 1
 
 # Characters
 
-Landing page for characters
+Information about each of my characters, including lore, personality, and art!

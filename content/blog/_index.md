@@ -5,6 +5,6 @@ title: 'Blog'
 weight: 3
 ---
 
-# Blog
+# Development Blog
 
-Landing page for Blog
+If you are interested in my ramblings about whatever topic.

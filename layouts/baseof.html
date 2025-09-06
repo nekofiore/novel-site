@@ -19,11 +19,13 @@
         {{ end }}
       </div>
     </div>
-    <h1>Diaries</h1>
+    <h1>Salt's Diaries</h1>
     <div class="cards">
       {{ range .Site.Sections.ByWeight.Reverse }}
         <button class="card">
-          {{ .Content }}
+          <div>
+            {{ .Content }}
+          </div>
         </button>
       {{ end }}
     </div>

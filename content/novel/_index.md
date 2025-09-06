@@ -7,4 +7,4 @@ weight: 0
 
 # Novel
 
-Landing page for novel
+Collection of volumes, chapters, and short stories for my novel.
