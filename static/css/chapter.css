@@ -38,6 +38,11 @@ hr:before {
   content: "✦";
 }
 
+a {
+  color: black;
+  text-decoration: none;
+}
+
 .container {
   margin: 0 auto;
   padding: 1rem;
