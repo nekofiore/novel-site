@@ -43,6 +43,11 @@ a {
   text-decoration: none;
 }
 
+.main-logo {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
 .container {
   margin: 0 auto;
   padding: 1rem;

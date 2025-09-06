@@ -22,13 +22,14 @@ ol, ul {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  border: variables.$default-border;
+  border: none;
   min-height: 100rem;
   height: 100%;
   width: 75vw;
   margin: 0 auto;
   .bulletin {
-    border: inherit;
+    border: variables.$default-border;
+    border-radius: 8px;
     width: 70%;
     h1 {
       font-size: x-large;
@@ -55,7 +56,8 @@ ol, ul {
     }
   }
   .side {
-    border: inherit;
+    border: variables.$default-border;
+    border-radius: 8px;
     width: 25%;
   }
 }

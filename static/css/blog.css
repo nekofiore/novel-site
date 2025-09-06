@@ -43,6 +43,11 @@ a {
   text-decoration: none;
 }
 
+.main-logo {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
 .container {
   margin: 0 auto;
   padding: 1rem;
@@ -166,14 +171,15 @@ ol, ul {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  border: 1px solid rgba(92, 98, 98, 0.5019607843);
+  border: none;
   min-height: 100rem;
   height: 100%;
   width: 75vw;
   margin: 0 auto;
 }
 .main .bulletin {
-  border: inherit;
+  border: 1px solid rgba(92, 98, 98, 0.5019607843);
+  border-radius: 8px;
   width: 70%;
 }
 .main .bulletin h1 {
@@ -200,7 +206,8 @@ ol, ul {
   margin: 0.5rem;
 }
 .main .side {
-  border: inherit;
+  border: 1px solid rgba(92, 98, 98, 0.5019607843);
+  border-radius: 8px;
   width: 25%;
 }
 
