@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html lang="{{ site.Language.LanguageCode }}" dir="{{ or site.Language.LanguageDirection `ltr` }}">
 <head>
+  <meta property="og:title" content="{{ .Title }}">
+  <meta property="og:description" content="The landing page of nekofiore">
+  <meta property="og:image" content="/favicon.png">
+  <meta property="og:url" content="https://nekofiore.net">
+
   {{ partial "title" . }}
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="icon" href="favicon.png">
+  <link rel="icon" href="/favicon.png">
   {{ partial "title.html" .}}
 </head>
 <body>

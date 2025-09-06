@@ -4,7 +4,6 @@ date: '{{ .Date }}'
 draft: false
 ---
 
-
 # Overview
 
 Fiore is a young, talented duelist who uses magic to enhance her agility and movements during combat. She is considered to be a prodigy, setting records as one of the youngest duelists to ever win a national tournament.
