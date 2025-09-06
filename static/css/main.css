@@ -210,8 +210,6 @@ html {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   transition: all 0.15s ease;
-}
-.cards .card div * {
   color: black;
   text-decoration: none;
 }
