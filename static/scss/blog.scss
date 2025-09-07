@@ -39,6 +39,8 @@ ol, ul {
       display: block;
       text-align: left;
       transition: background-color 0.1s ease;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
       * {
         background: transparent;
       }
@@ -49,9 +51,11 @@ ol, ul {
       h1 {
         font-size: large;
         margin: 0.5rem;
+        margin-bottom: 0;
       }
       small {
         margin: 0.5rem;
+        margin-top: 0;
       }
     }
   }

@@ -190,6 +190,8 @@ ol, ul {
   display: block;
   text-align: left;
   transition: background-color 0.1s ease;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 .main .bulletin .list-item * {
   background: transparent;
@@ -201,9 +203,11 @@ ol, ul {
 .main .bulletin .list-item h1 {
   font-size: large;
   margin: 0.5rem;
+  margin-bottom: 0;
 }
 .main .bulletin .list-item small {
   margin: 0.5rem;
+  margin-top: 0;
 }
 .main .side {
   border: 1px solid rgba(92, 98, 98, 0.5019607843);

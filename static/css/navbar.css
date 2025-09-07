@@ -26,8 +26,10 @@
   margin: 0.25rem;
   text-decoration: none;
   object-fit: scale-down;
+  transition: all 0.15s ease;
 }
 .navbar .nav-left a:hover, .navbar .nav-left button:hover, .navbar .nav-center a:hover, .navbar .nav-center button:hover, .navbar .nav-right a:hover, .navbar .nav-right button:hover {
+  transform: scale(1.1);
   cursor: pointer;
 }
 .navbar .nav-left img, .navbar .nav-center img, .navbar .nav-right img {
@@ -45,7 +47,7 @@
   border-right: 1px solid rgba(92, 98, 98, 0.5019607843);
   border-bottom: 1px solid rgba(92, 98, 98, 0.5019607843);
   background-color: white;
-  top: 3.25rem;
+  top: 3.3rem;
   left: 0;
   height: 100vh;
   max-width: 10rem;
