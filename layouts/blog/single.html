@@ -1,6 +1,6 @@
-{{ $currentBlog := .Weight }}
-{{ $prevBlog := sub $currentBlog 1 }}
-{{ $nextBlog := add $currentBlog 1 }}
+{{ $pages := .CurrentSection.RegularPages.ByDate }}
+{{ $prevPage := $pages.Next . }}
+{{ $nextPage := $pages.Prev . }}
 
 <!DOCTYPE html>
 <html lang="{{ site.Language.LanguageCode }}" dir="{{ or site.Language.LanguageDirection `ltr` }}">
@@ -62,10 +62,10 @@
   </div>
 
   <!-- Hidden pagination for script -->
-  {{ range where .Parent.RegularPages "Weight" $prevBlog }}
+  {{ with $prevPage }}
     <a id="prevPage" class="prev-page material-icons" style="display: none" href="{{ .RelPermalink }}">arrow_drop_up</a>
   {{ end }}
-  {{ range where .Parent.RegularPages "Weight" $nextBlog }}
+  {{ with $nextPage }}
     <a id="nextPage" class="next-page material-icons" style="display: none;" href="{{ .RelPermalink }}">arrow_drop_down</a>
   {{ end }}
   
