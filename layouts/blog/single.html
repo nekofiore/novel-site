@@ -1,0 +1,79 @@
+{{ $currentBlog := .Weight }}
+{{ $prevBlog := sub $currentBlog 1 }}
+{{ $nextBlog := add $currentBlog 1 }}
+
+<!DOCTYPE html>
+<html lang="{{ site.Language.LanguageCode }}" dir="{{ or site.Language.LanguageDirection `ltr` }}">
+<head>
+  <title> {{ .Title }} </title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="/css/chapter.css">
+  <link rel="icon" href="/favicon.png">
+  {{ partial "title.html" .}}
+</head>
+
+<body>
+  <!-- Menu -->
+   {{ partial "navbar" .}}
+  <!-- Main Logo -->
+  <div class="main-logo">
+    {{ partial "logo.html" }}
+  </div>  
+  <!-- Container for Chapter & Table of Contents -->
+  <div class="container">
+    <!-- Chapter -->
+    <div class="chapter">
+      <header class="header-info">
+        <h1 class="heading-series"> {{ .Title }} </h1>
+        <time class="published"> First Published: {{ .Params.Date | time.Format ":date_medium" }} </time>
+        {{ if .Params.Draft }}
+          <p><b>NOTE: This page is still in its drafting phase. Major changes may still occur.</b></p>
+        {{ end }}
+      </header>
+      <hr class="hr-normal">
+      {{ .Content }}
+      <hr class="chapter-end">
+      <!-- This section represents the 'after' of the chapter  -->
+      <hr class="hr-normal">
+      {{ with .Resources.Get "note.md" }}
+        <div class="centered">
+          <b> {{ .Title }} </b>
+            {{ .Content }}
+        </div>
+      {{ end }}
+      <script src="/js/chapter.js"></script>
+    </div>
+
+    <!-- Table of Contents -->
+    <div id="pageList" class="page-list hidden">
+      <div class="list-header">
+        <h1>Table of Contents</h1>
+      </div>
+      <div>
+        <h2 style="font-weight: bold">Chapters</h2>
+      </div>
+      {{ range .Parent.RegularPages.ByWeight.Reverse }}
+        <div>
+          <div class="index"> {{ .Weight }} </div>
+          <a href="{{ .RelPermalink }}"> {{ .Title }} </a>
+        </div>
+      {{ end }}
+    </div>
+  </div>
+
+  <!-- Hidden pagination for script -->
+  {{ range where .Parent.RegularPages "Weight" $prevBlog }}
+    <a id="prevPage" class="prev-page material-icons" style="display: none" href="{{ .RelPermalink }}">arrow_drop_up</a>
+  {{ end }}
+  {{ range where .Parent.RegularPages "Weight" $nextBlog }}
+    <a id="nextPage" class="next-page material-icons" style="display: none;" href="{{ .RelPermalink }}">arrow_drop_down</a>
+  {{ end }}
+  
+  <!-- Footer -->
+  <div>
+    <footer>
+      {{ partial "footer.html" . }}
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,12 +1,14 @@
 ---
 title: 'Why does this Website Exist?'
+series: 'the very first blog'
 author: 'Salt'
 date: '2025-09-06T12:58:01-07:00'
-type: 'chapter'
+type: 'blog'
 layout: 'single'
 categories: 'Blog'
 tags: ['Development']
 draft: false
+weight: 1
 ---
 
 <center> <b>Welcome to the first <i>actual</i> post of this website.</b> </center>

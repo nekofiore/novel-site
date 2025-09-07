@@ -1,15 +1,17 @@
 ---
-title: 'First Blog'
+title: 'Test Blog'
+series: 'Test'
 author: 'Salt'
 date: '2025-09-06T12:30:21-07:00'
-type: 'chapter'
+type: 'blog'
 layout: 'single'
 categories: 'Blog'
 tags: ['Test']
 draft: false
+weight: 0
 ---
 
-# First Blog!
+# Test Blog!
 
 This is testing for one of my first blogs.
 
